@@ -10,8 +10,9 @@ import { Room } from '../room';
   styleUrls: ['./create-room.component.css']
 })
 export class CreateRoomComponent implements OnInit {
+  
   room: Room = new Room();
-  submitted: false;
+  submitted = false;
 
 
   constructor(private roomService: RoomService, 
@@ -36,11 +37,10 @@ export class CreateRoomComponent implements OnInit {
 
   onSubmit() {
     this.submitted = true;
-    this.save();
+    this.save();    
   }
 
   gotoList() {
     this.router.navigate(['/rooms']);
   }
-
 }

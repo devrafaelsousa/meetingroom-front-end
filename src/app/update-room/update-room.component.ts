@@ -38,7 +38,7 @@ export class UpdateRoomComponent implements OnInit {
     this.gotoList();
   }
 
-  onSubimit() {
+  onSubmit() {
     this.updateRoom();
   }
 
